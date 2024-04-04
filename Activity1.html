@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "author" content = "Khea Cassandra A. Miranda">
+        <meta name = "keywords" content = "HTML, CSS, Javascript">
+        <meta name = "revised" content = "04/04/24">
+        
+        <title> Sign up Page </title>
+    </head>
+
+    <body>
+       
+        <div class = "container"> 
+            <h1>Sign up</h1>
+            <p>Please fill in this form to create an account</p>
+
+
+            <form class = "hr">
+                <label for="nme"><b>Name</b></label><br/>
+                <input type = "text" placeholder="Enter Name" id = "name" name = "nme" required><br/>
+
+                <label for="userName"><b>Preferred username</b></label><br/>
+                <input type = "text" placeholder="Enter Preferred Username" id = "prefUsername" name = "userName" required><br/>
+
+                <label for="psw"><b>Password</b></label><br/>
+                <input type = "password" placeholder="Enter Password" id = "psWord" name = "psw" required><br/>
+
+                <label for="cnfrmpsw"><b>Confirm Password</b></label><br/>
+                <input type = "password" placeholder="Confirm Password" id = "confPswrd" name = "cnfrmpsw" required><br/>
+
+                <label for="email"><b>Email</b></label><br/>
+                <input type = "text" placeholder="Enter Email" id = "eml" name = "email" required><br/>
+
+                <label for="address"><b>Address</b></label><br/>
+                <input type = "text" placeholder="Enter Address" id = "adrss" name = "address" required><br/>
+
+                <label for="comments"><b>What's your interest?</b></label><br/>
+                <textarea placeholder = "Enter your interest" id = "textArea" name = "comments" rows = "4" cols = "50"></textarea><br/>
+
+                <div class = "butSub"><br/>
+                    <button type = "button" class = "resetBtn">Reset</button><br/>
+                    <button type = "submit" class = "sbmtBtn">Submit</button><br/>
+                </div>
+
+            </form>
+        </div>
+    </body>
+
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-image: url("babob.jpg");
+}
+       
+    *{box-sizing: border-box}
+
+
+input[type=text]{
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    background: #ecd1ef;
+    }
+input[type=password] {
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    background: #ecd1ef;
+    }
+
+
+input[type=text]:focus{
+    background-color: #fdd9f4;
+    outline: none;
+    }
+input[type=password]:focus {
+    background-color: #fdd9f4;
+    outline: none;
+    }
+    
+#name{
+    background-image: url("sponge.jpg");
+    background-position: 2px;
+}
+#address{
+    background-image: url("patrick.jpg");
+    background-position: 20px;
+}
+
+
+#prefUsername{
+    background-image: url("wow.jpg");
+    background-position: 2px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+ #psWord{
+    background-image: url("gary.webp");
+    background-position: 20px
+}
+
+#confPswrd{
+    background-image: url("plankton.webp");
+    background-position: 10px   ;
+}
+#eml{
+    background-image: url("mrspuff.png");
+    background-position: 2px;
+}
+#address{
+    background-image: url("sponge.jpg");
+    background-position: -100px;
+}
+
+#adrss{
+    background-image: url("patrick.jpg");
+    background-position: 2px;
+}
+#textArea{
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    background-image: url("bob.jpg");
+    background-position: 2px;
+    }
+
+#textArea:focus {
+    background-color: #ddd;
+    outline: none;
+    }
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+.resetBtn {
+  padding: 14px 20px;
+  background-image: url("krabs.webp");
+  background-position: 2px;
+  float: left;
+  font-weight: bold;
+  color: black;
+  width: 50%;
+  border-radius: 20px; 
+  border: none;
+}
+
+.sbmtBtn {
+  background-image: url("waward.webp");
+  background-position: 10px;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  color:black;
+  float: left;
+  width: 50%;
+  margin-top: -11px;
+  border-radius: 20px;
+  border: none;
+}
+ 
+
+.container {
+  padding: 16px;
+}
+
+.subBot::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+
+    </style>
+</html>
+
